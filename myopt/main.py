@@ -115,7 +115,7 @@ class PriceHistory:
         return url
     
 
-    def fetch_prices(self, symbols:Union[str, List[str]], function:str ='TIME_sERIES_DAILY', outputsize:str='full')->pd.DataFrame:
+    def fetch_prices(self, symbols:Union[str, List[str]], function:str ='TIME_SERIES_DAILY', outputsize:str='full')->pd.DataFrame:
         """
         Fetch prices for the given symbols, clean data, and add to dataframe
         
