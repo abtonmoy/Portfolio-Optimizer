@@ -68,7 +68,7 @@ This project provides a modular and extensible Python API class called `PriceHis
 ## Usage Example
 
 ```python
-from price_history import PriceHistory
+from operations.fetch_data import PriceHistory
 
 api_key = 'YOUR_API_KEY'
 symbols = ['AAPL', 'MSFT', 'GOOGL', 'TSLA']
@@ -81,13 +81,13 @@ summary = ph.get_data_summary()
 ### Optimization Example
 
 ```python
-from optimizer import monte_carlo_simulation, optimize_portfolio
+from optimizations import monte_carlo_simulation, scipy_SLSQP_optimization
 
 # Run Monte Carlo simulation
 simulation_df = monte_carlo_simulation(data)
 
 # Perform SLSQP optimization
-optimal_weights = optimize_portfolio(data)
+optimal_weights = scipy_SLSQP_optimization(data)
 ```
 
 ---
