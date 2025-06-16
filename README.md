@@ -150,7 +150,6 @@ MIT License
 ## Author
 
 **Abdul Basit Tonmoy**
-Wabash College
 
 ---
 
