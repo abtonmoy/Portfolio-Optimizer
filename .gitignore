@@ -57,3 +57,6 @@ coverage.xml
 # Windows
 Thumbs.db
 ehthumbs.db
+
+# CUSTOM FILES
+optimizations/test.ipynb

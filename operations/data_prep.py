@@ -79,6 +79,18 @@ class DataPreparer:
             self.cov_matrix
         )
     
+    def get_last_prices(self) -> pd.Series:
+        """
+        Get the last available prices for each asset
+        
+        Returns:
+            pd.Series: Last closing prices indexed by symbol
+        """
+        if self.pivot_df is None:
+            raise RuntimeError("Data not prepared. Call load_and_prepare() first.")
+            
+        return self.pivot_df.iloc[-1]
+    
     def get_full_data(self) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, 
                                     pd.Series, pd.DataFrame, pd.DataFrame]:
         """
